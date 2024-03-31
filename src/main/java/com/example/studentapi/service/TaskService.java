@@ -34,7 +34,8 @@ public class TaskService {
         log.info("color{}", color);
         return color;
     }
-    public void updateDescription(Long id, String description){
+
+    public void updateDescription(Long id, String description) {
         taskRepository.updateDescriptionById(id, description);
     }
 }
